@@ -16,6 +16,12 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 992px) {
+    max-width: 720px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -69,6 +75,14 @@ section {
     padding: 0 85px;
     margin-bottom: 40px;
     border: 1px solid #ffffff;
+    @media (max-width: 992px) {
+      padding: 0 20px;
+      height: 350px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+      height: 520px;
+    }
   }
   .content:hover {
     border: 1px solid #62db54;
